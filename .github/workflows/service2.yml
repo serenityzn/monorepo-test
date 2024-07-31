@@ -1,0 +1,11 @@
+name: service2
+on:
+  push:
+    paths:
+      - 'service2/**'
+jobs:
+  hello-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-step
+        run: echo "Hello World Service2!"
